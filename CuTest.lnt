@@ -1,0 +1,1 @@
+-efunc(545, CuTestRun)   // disable warning for tc->jumpBuf = &buf;

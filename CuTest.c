@@ -40,6 +40,7 @@ void CuStringInit(CuString* str)
 CuString* CuStringNew(void)
 {
 	CuString* str = (CuString*) malloc(sizeof(CuString));
+	if(NULL == str) { return NULL; }
 	str->length = 0;
 	str->size = STRING_MAX;
 	str->buffer = (char*) malloc(sizeof(char) * str->size);
