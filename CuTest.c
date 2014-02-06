@@ -1,3 +1,9 @@
+
+#if defined(_WIN32) && !defined(_CRT_SECURE_NO_WARNINGS)
+// turn off warnings in Visual Studio C++ for not using _s functions
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
 #include <assert.h>
 #include <setjmp.h>
 #include <stdlib.h>
